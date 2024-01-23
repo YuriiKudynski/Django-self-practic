@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'news',
     'main',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -120,8 +121,9 @@ STATIC_URL = '/static/'  # Include the leading slash
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "main" / "static",
 ]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
